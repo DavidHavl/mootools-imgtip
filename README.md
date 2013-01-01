@@ -8,7 +8,7 @@ Usage:
 
 HTML:
 
-<a href="someurl.html" data-image="/image/imglarge.jpg" class="myhzlink"><img src="/image/imgthumb.jpg" alt=""></a>
+&lt;a href="someurl.html" data-image="/image/imglarge.jpg" class="myhzlink">&lt;img src="/image/imgthumb.jpg" alt="">&lt;/a>
 
 Javascript:
 
