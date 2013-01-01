@@ -25,10 +25,11 @@ var hooverZoom = new Class({
     position : {'x' : 30, 'y' : 30},
     size : {'width' : 250, 'height' : 250},
     //initialization
-    initialize: function(options) {
+    initialize: function(elements, options) {
       //set options
       this.setOptions(options);
       this.createBox();
+      this.bindElements(elements);
     },
 
     createBox : function()
