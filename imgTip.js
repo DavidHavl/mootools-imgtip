@@ -42,7 +42,7 @@ var imgTip = new Class({
         },
         showDelay: 100,
         hideDelay: 100,
-        className: 'imgtip-wrap',
+        className: 'imgtip_container',
         offset: {
             x: 16,
             y: 16
@@ -64,7 +64,7 @@ var imgTip = new Class({
         this.setOptions(params.options);
         if (params.elements) this.attach(params.elements);
         this.container = new Element('div', {
-            'class': 'imgtip'
+            'class': 'imgtip_content'
         });
 
         if (this.options.id) {
