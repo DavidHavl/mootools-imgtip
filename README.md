@@ -1,24 +1,12 @@
 mootools-imgTip
 ===================
-<h2></h2>
+
 I was searching for a simple script for mootools js that would show a larger image when hovering over image thumbnail.
 Sadly I did not find it, so I decided to write my own.
 
-I have largely based the code on existing mootools Tip component.
 
 <h2>DEMO:</h2>
-<!--<script type="text/javascript" src="https://raw.github.com/DavidHavl/mootools-imgtip/master/hooverZoom.js"></script>-->
-
-<div>
-    <img src="http://havl.net/davidhavl.jpg" title="" data-imgtip-url="http://havl.net/davidhavl.jpg" class="imgtip"/>
-    <img src="http://havl.net/davidhavl.jpg" title="" data-imgtip-url="http://havl.net/davidhavl.jpg" class="imgtip" />
-</div>
-<script type="text/javascript">
-var imgtip = new imgTip($$('img.imgtip'), {});
-</script>
-<h2>DOWNLOAD:</h2>
-Get the full code from <a href="https://github.com/DavidHavl/mootools-imgtip">github</a>.
-
+<a href="http://havl.net/devnotes/2013/02/imgtip-mootools-image-popup-on-hover-plugin/">here</a>
 <h2>USAGE</h2>
 
 <h3>HTML</h3>
@@ -36,3 +24,6 @@ Get the full code from <a href="https://github.com/DavidHavl/mootools-imgtip">gi
 
 
 <h2>OPTIONS</h2>
+
+
+Please note; I have largely based the code on existing mootools Tip component.
