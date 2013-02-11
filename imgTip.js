@@ -36,7 +36,7 @@ var imgTip = new Class({
         body: function (element) {
             var url = element.get('data-imgtip-url') || element.get('rel') || element.get('href');
             if (url) {
-                return '<img src="' + url + '" alt="imgtip full image">'; // TODO: add image preloading? mootools Assets?
+                return '<img src="' + url + '" alt="loading...">'; // TODO: add image preloading?
             }
             return element.get('text');
         },
@@ -84,11 +84,11 @@ var imgTip = new Class({
             }
         }).adopt(
         new Element('div', {
-            'class': 'imgtip-top'
+            'class': 'imgtip_top'
         }),
         this.container,
         new Element('div', {
-            'class': 'imgtip-bottom'
+            'class': 'imgtip_bottom'
         }));
 
         return this.imgtip;
@@ -145,10 +145,12 @@ var imgTip = new Class({
 
             ['title', 'body'].each(function (value) {
                 var content = element.retrieve('imgtip:' + value);
-                var div = this['_' + value + 'Element'] = new Element('div', {
-                    'class': 'imgtip-' + value
-                }).inject(this.container);
-                if (content) this.fill(div, content);
+                if (content) {
+                    var div = this['_' + value + 'Element'] = new Element('div', {
+                        'class': 'imgtip_' + value
+                    }).inject(this.container);
+                    this.fill(div, content);
+                }
             }, this);
             this.show(element);
             this.position((this.options.fixed) ? {
