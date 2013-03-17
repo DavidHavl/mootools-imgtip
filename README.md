@@ -11,10 +11,10 @@ Sadly I did not find it, so I decided to write my own.
 
 <h3>HTML</h3>
 <pre class="code html">
-  <div id="thumbs_container">
-    <img src="http://yoursite.com/img_1_thumbnail.jpg" title="Title of this image" data-imgtip-url="http://yoursite.com/img_1_full.jpg"  class="imgtip"/>
-    <img src="http://yoursite.com/img_2_thumbnail.jpg" title="Title of this second image" data-imgtip-url="http://yoursite.com/img_2_full.jpg" class="imgtip" />
-  </div>
+  &lt;div id="thumbs_container">
+    &lt;img src="http://yoursite.com/img_1_thumbnail.jpg" title="Title of this image" data-imgtip-url="http://yoursite.com/img_1_full.jpg"  class="imgtip"/>
+    &lt;img src="http://yoursite.com/img_2_thumbnail.jpg" title="Title of this second image" data-imgtip-url="http://yoursite.com/img_2_full.jpg" class="imgtip" />
+  &lt;/div>
 </pre>
 
 <h3>JS</h3>
